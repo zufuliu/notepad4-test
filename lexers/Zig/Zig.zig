@@ -50,6 +50,14 @@ const binary_mask = 0b1_1111_1111;
 const permissions = 0o7_5_5;
 const big_address = 0xFF80_0000_0000_0000;
 
+const hex_floating_point = 0x103.70p-5;
+const another_hex_float = 0x103.70;
+const yet_another_hex_float = 0x103.70P-5;
+
+
+// You can also assign from a slice with comptime-known length to a vector using .*
+const vec2: @Vector(2, f32) = arr1[1..3].*;
+    
 const Point = struct {
     x: f32,
     y: f32,
@@ -70,4 +78,10 @@ const Payload = union {
     int: i64,
     float: f64,
     boolean: bool,
+};
+
+const FileOpenError = error {
+    AccessDenied,
+    OutOfMemory,
+    FileNotFound,
 };
