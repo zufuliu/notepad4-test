@@ -4,7 +4,10 @@
 /// classes, and their members. Tools like IDEs and dartdoc treat
 /// doc comments specially.
 
-/* Comments like these are also supported. */
+/* Comments like these
+/*
+*/
+ are also supported. */
 
 import 'package:lib1/lib1.dart';
 import 'package:lib2/lib2.dart' as lib2;
@@ -31,10 +34,16 @@ var s4 = "It's even easier to use the other delimiter.";
 
 var s1 = '''
 You can create
+\n
 multi-line strings like this one.
 ''';
 
 var s2 = """This is also a
+$xxx
+multi-line string.""";
+
+var s2 = """This is also a
+${xxx}
 multi-line string.""";
 
 var s1 = r'''
