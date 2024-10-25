@@ -1,6 +1,8 @@
 import os.path
 import random
 
+# https://github.com/zufuliu/notepad4/issues/875
+
 def GetFileExtList():
 	extList = ['empty']
 	path = 'assoc.log'
