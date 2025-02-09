@@ -1,3 +1,7 @@
+Large File
+	https://dumps.wikimedia.org/
+	https://dumps.wikimedia.org/enwiki/latest/enwiki-latest-flaggedrevs.sql.gz
+
 Batch
 	NSudo.bat		https://github.com/zufuliu/notepad4/issues/332
 	perldoc.bat		Perl\bin\
