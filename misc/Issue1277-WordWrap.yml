@@ -1,0 +1,67 @@
+清晨推开窗时山间薄雾正顺着青石纹路缓缓漫上来，手边竹篮里还放着昨夜未收的干花茶，风掠过林梢带起细碎松针落在肩头，沿着蜿蜒山道往下走能看见溪涧碎石间游着浅银色小鱼，岸边野雏菊开得层层叠叠淡白花瓣沾着微凉露水。老槐树底下摆着粗木方桌，白发老者正细细打磨竹制短笛，手边陶罐盛着清冽山泉，偶尔有山雀落在桌沿啄食散落的粟米，听见脚步声便扑棱翅膀飞向远处青黛色山峦。行至渡口木船随水波轻轻摇晃，撑船人握着长竹篙立于船头，水面倒映两岸丛生芦苇与错落木屋，远处梯田层层铺展，金黄稻穗在微风里起伏翻涌。渡口旁旧茶铺飘出温热麦香，掌柜端来陶碗盛的糙米茶汤，闲谈间说起秋日山林会结满酸甜野柿，深谷深处藏着经年不涸的温泉，雨后云雾缠绕峰顶宛若仙境。
+---
+steps: 8,
+cfg scale: 1.000000,
+guidance: 3.500000,
+eta: inf,
+seed: 1067836198,
+size: 768x1024,
+model: ,
+rng: cuda,
+sampler: NONE,
+te: Qwen3-4B-Instruct-2507-Q4_K_M.gguf,
+unet: z_image_turbo-Q4_K.gguf,
+vae: ae.safetensors,
+version: stable-diffusion.cpp,
+sdcpp:
+	{
+	  "auto_resize_ref_image": true,
+	  "clip_skip": -1,
+	  "control_strength": 0.8999999761581421,
+	  "generator": {
+	    "commit": "b290693",
+	    "name": "stable-diffusion.cpp",
+	    "version": "unknown"
+	  },
+	  "height": 1024,
+	  "increase_ref_index": false,
+	  "mode": "img_gen",
+	  "models": {
+	    "diffusion_model": "z_image_turbo-Q4_K.gguf",
+	    "llm": "Qwen3-4B-Instruct-2507-Q4_K_M.gguf",
+	    "vae": "ae.safetensors"
+	  },
+	  "prompt": {
+	    "negative": "",
+	    "positive": "清晨推开窗时山间薄雾正顺着青石纹路缓缓漫上来，手边竹篮里还放着昨夜未收的干花茶，风掠过林梢带起细碎松针落在肩头，沿着蜿蜒山道往下走能看见溪涧碎石间游着浅银色小鱼，岸边野雏菊开得层层叠叠淡白花瓣沾着微凉露水。老槐树底下摆着粗木方桌，白发老者正细细打磨竹制短笛，手边陶罐盛着清冽山泉，偶尔有山雀落在桌沿啄食散落的粟米，听见脚步声便扑棱翅膀飞向远处青黛色山峦。行至渡口木船随水波轻轻摇晃，撑船人握着长竹篙立于船头，水面倒映两岸丛生芦苇与错落木屋，远处梯田层层铺展，金黄稻穗在微风里起伏翻涌。渡口旁旧茶铺飘出温热麦香，掌柜端来陶碗盛的糙米茶汤，闲谈间说起秋日山林会结满酸甜野柿，深谷深处藏着经年不涸的温泉，雨后云雾缠绕峰顶宛若仙境。
+"
+	  },
+	  "rng": "cuda",
+	  "sampling": {
+	    "custom_sigmas": [],
+	    "eta": null,
+	    "extra_sample_args": "",
+	    "flow_shift": null,
+	    "guidance": {
+	      "distilled_guidance": 3.5,
+	      "img_cfg": null,
+	      "slg": {
+	        "end": 0.20000000298023224,
+	        "layers": [
+	          7,
+	          8,
+	          9
+	        ],
+	        "scale": 0.0,
+	        "start": 0.009999999776482582
+	      },
+	      "txt_cfg": 1.0
+	    },
+	    "shifted_timestep": 0,
+	    "steps": 8
+	  },
+	  "schema": "sdcpp.image.params/v1",
+	  "seed": 1067836198,
+	  "strength": 0.75,
+	  "width": 768
+	}
