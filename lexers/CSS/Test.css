@@ -1,0 +1,43 @@
+/* ScintillaDoc.html */
+table.standard tr:nth-child(odd) {background: #D7D7D7}
+
+/* https://sourceforge.net/p/scintilla/bugs/2431/ */
+#appMenu-zoom-controls{
+
+  > :is(#appMenu-fullscreen-button2, #appMenu-zoomReduce-button2, #appMenu-zoomEnlarge-button2, #appMenu-zoomReset-button2) {
+    background-color: transparent !important;
+
+  &:not([disabled]):hover  {background-color: #5A64E6 !important;}
+  &:not([disabled]):active {background-color: #665ae6 !important;}
+
+  }
+
+}
+
+/* https://www.w3.org/TR/css-fonts-4/ */
+@font-face {
+  font-family: DroidSans;
+  src: url(DroidSansJapanese.woff);
+  unicode-range: U+3000-9FFF, U+ff??;
+}
+
+/* https://www.w3.org/TR/css-nesting-1/ */
+.error, #404 {
+  &:hover > .baz { color: red; }
+}
+:is(.error, #404):hover > .baz { color: red; }
+
+@scope (.card) to (> header) {
+  :scope {
+    inline-size: 40ch;
+    aspect-ratio: 3/4;
+
+    > header {
+      border-block-end: 1px solid white;
+    }
+  }
+}
+@scope (.card) to (> header) {
+  :scope { inline-size: 40ch; aspect-ratio: 3/4; }
+  :scope > header { border-block-end: 1px solid white; }
+}
