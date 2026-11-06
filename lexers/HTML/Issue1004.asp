@@ -1,6 +1,6 @@
 <style>
 <!--
 html{}
-body{width <%=width%>;}
+body{width: <%=width%>px;}
 -->
 </style>
